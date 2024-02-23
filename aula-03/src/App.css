@@ -1,0 +1,14 @@
+h1{
+    color: rosybrown;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+
+}
+p{
+    color:mediumblue;
+}
+
+.exemplo01{
+    color:bisque;
+    margin: 35px;
+}
