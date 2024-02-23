@@ -2,6 +2,8 @@ import './App.css';
 import ComponenteTeste from './componentes/ComponenteTeste';
 import ComponenteExArrow from './componentes/ComponenteExArrow';
 import Footer from './componentes/Footer';
+import Header from './componentes/Header';
+
 
 function App(){
 
@@ -23,6 +25,7 @@ function App(){
             <ComponenteTeste></ComponenteTeste>
             <ComponenteExArrow></ComponenteExArrow>
             <Footer></Footer>
+            <Header></Header>
         </>
     )
 }
