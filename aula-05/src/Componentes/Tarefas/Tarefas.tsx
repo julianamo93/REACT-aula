@@ -1,4 +1,5 @@
 import React from "react";
+import './Tarefas.css';
 //Importa a biblioteca React, que é necessária para definir componentes React.
  
 // Declara uma interface chamada TarefaProps, ao ter variaveis vou definir os tipos

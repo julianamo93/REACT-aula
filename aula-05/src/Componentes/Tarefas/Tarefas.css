@@ -1,3 +1,24 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: bisque;
+}
 li{
-    list-style
+    list-style: none;
+    padding: 8px;
+    background-color: lightpink;
+    border-radius: 4px;
+}
+li:hover{
+    background-color: rosybrown;
+}
+button{
+    width: 120px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    background-color: lightpink;
+    border-radius: 7rem;
+}
+button:hover{
+    background-color: rosybrown;
+    transition: background-color 0.2s;
 }
