@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React,{useContext} from "react";
+import './App.css';
+import { ThemeProvider, ThemeContext } from "./ThemeContext";
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+function App(){
+
+  const themeContext = useContext(ThemeContext);
+
+  if (!themeContext){
+    return <div>ERRO AO CARREGAR O TEMA</div>
+  }
+
+  // estrutura do App(componente)
+
+  return(
+    <div className="App" style={{backgroundColor: themeContext.theme}}>
+        <header className="App-header">
+        <button onClick={themeContext.toggleTheme}> MUDAR COR DE FUNDO </button>
+        </header>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    </div>
   )
+
 }
 
-export default App
+// Exportando o componente do App envolvido pelo ThemeProvider
+export default function Main() {
+  return (
+  <ThemeProvider>
+        <App />
+  </ThemeProvider>
+  );
+}
