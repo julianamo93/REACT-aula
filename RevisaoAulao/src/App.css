@@ -1,0 +1,22 @@
+h1 {
+    color: mediumseagreen;
+    text-align: center;
+    font-size: 30px;
+}
+
+.exemplo{
+    color: mediumpurple;
+    font-size: 20px;
+}
+
+p {
+    color: lightblue;
+    font-size: 12px;
+}
+
+.padrao {
+    color: lightblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    align-items: center;
+}
